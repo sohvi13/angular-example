@@ -6,18 +6,14 @@ import { MatListModule } from '@angular/material/list';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [
-    MatButtonModule,
-    MatListModule,
-  ],
+  imports: [ MatButtonModule,MatListModule,],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
 })
 export class HomeComponent {
   headerText = 'Testing Angular Applications';
 
-  constructor(public router: Router) { }
-
+  constructor(public router: Router){ }
   ngOnInit(): void {
   }
 

@@ -46,10 +46,10 @@ describe('MathUtils', () => {
   });
 
   it('isPrime identifies primes and non-primes including boundaries', () => {
-    [ -5, 0, 1, 4, 9, 21, 100 ].forEach(n => {
+    [-5, 0, 1, 4, 9, 21, 100].forEach((n) => {
       expect(utils.isPrime(n)).withContext(`n=${n}`).toBeFalse();
     });
-    [ 2, 3, 5, 97 ].forEach(n => {
+    [2, 3, 5, 97].forEach((n) => {
       expect(utils.isPrime(n)).withContext(`n=${n}`).toBeTrue();
     });
   });
